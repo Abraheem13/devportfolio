@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "id": "raja-00",
+      "name": "Research Portfolio (This Site)",
+      "createdAt": "2026",
+      "url": "https://github.com/Abraheem13",
+      "description": "This site. A Next.js research portfolio with custom Research and Collaborations sections, canvas-based particle-network background (neural-network aesthetic), Clarity-inspired typographic design (EB Garamond + Inter), Journal/Conference publication filtering, a full writing section with featured-papers sidebar, and expandable publication cards. Built from the socialyadept/devportfolio fork and heavily customised for academic use.",
+      "isFork": false,
+      "languages": [
+        { "name": "Next.js", "iconifyClass": "simple-icons:nextdotjs" },
+        { "name": "React", "iconifyClass": "logos-react" },
+        { "name": "JavaScript", "iconifyClass": "logos-javascript" },
+        { "name": "CSS Modules", "iconifyClass": "logos-css-3" }
+      ]
+    },
+    {
+      "id": "raja-01",
+      "name": "Agentic AI for Autonomous Equity Research",
+      "createdAt": "2025-2026",
+      "url": "#",
+      "description": "MSc dissertation project at Brunel. A fully functional LLM-powered equity research system using a multi-agent pipeline that retrieves live market data, performs fundamental and technical analysis, synthesises structured reports, and self-evaluates factual consistency. A companion benchmark dataset measures hallucination rates, hierarchical reasoning quality, and factual accuracy against analyst-produced ground truth.",
+      "isFork": false,
+      "languages": [
+        { "name": "Python", "iconifyClass": "logos-python" },
+        { "name": "PyTorch", "iconifyClass": "logos-pytorch" },
+        { "name": "LangChain", "iconifyClass": "simple-icons:langchain" },
+        { "name": "OpenAI", "iconifyClass": "simple-icons:openai" }
+      ]
+    },
+    {
+      "id": "raja-02",
+      "name": "LLM-Powered SIEM (National Deployment)",
+      "createdAt": "Feb 2025-Jun 2025",
+      "url": "#",
+      "description": "First national deployment of an LLM-based SIEM across 200+ federal organisations for Pakistan's NCERT. End-to-end pipeline, Kafka ingestion → LLM-based threat classification (INT8/INT4 quantised inference) → automated alert routing, designed to autonomously process and triage 25M+ logs per day, replacing manual SOC Level 1 analyst operations at national scale.",
+      "isFork": false,
+      "languages": [
+        { "name": "PyTorch", "iconifyClass": "logos-pytorch" },
+        { "name": "Hugging Face", "iconifyClass": "simple-icons:huggingface" },
+        { "name": "Kafka", "iconifyClass": "simple-icons:apachekafka" },
+        { "name": "Kubernetes", "iconifyClass": "logos-kubernetes" }
+      ]
+    },
+    {
+      "id": "raja-03",
+      "name": "Enterprise RAG: Multi-Agent Architecture",
+      "createdAt": "2024-2025",
+      "url": "#",
+      "description": "Self-hosted retrieval-augmented generation system using hierarchical multi-agent orchestration and hybrid retrieval (dense + sparse + re-ranking). Improved end-to-end accuracy from 76% (dense-only baseline) to 89% at sub-200ms latency. Built at Neura-X.",
+      "isFork": false,
+      "languages": [
+        { "name": "Python", "iconifyClass": "logos-python" },
+        { "name": "Llama.cpp", "iconifyClass": "simple-icons:meta" },
+        { "name": "Qdrant", "iconifyClass": "simple-icons:qdrant" },
+        { "name": "Elasticsearch", "iconifyClass": "simple-icons:elasticsearch" },
+        { "name": "Docker", "iconifyClass": "logos-docker-icon" }
+      ]
+    },
+    {
+      "id": "raja-04",
+      "name": "ZazuAI: On-Premise Meeting Intelligence",
+      "createdAt": "2024",
+      "url": "#",
+      "description": "Dual-pipeline on-premise speech system. Real-time transcription (Whisper.cpp + DIART, sub-500ms latency) paired with high-accuracy post-processing (WhisperX, 96% transcription / 80% diarisation accuracy). Automated meeting minutes generated via Llama.cpp.",
+      "isFork": false,
+      "languages": [
+        { "name": "Python", "iconifyClass": "logos-python" },
+        { "name": "Whisper", "iconifyClass": "simple-icons:openai" },
+        { "name": "Docker", "iconifyClass": "logos-docker-icon" }
+      ]
+    },
+    {
+      "id": "raja-05",
+      "name": "Thermal Imaging for Industrial Monitoring",
+      "createdAt": "2024",
+      "url": "#",
+      "description": "Hybrid ViT + CNN architecture with Spatio-Temporal Graph Neural Networks for sand-level monitoring in industrial separators. Achieved 90-95% accuracy via contrastive learning. Key insight: reduced ViT patch size from 16×16 to 4×4 for effective low-resolution thermal adaptation.",
+      "isFork": false,
+      "languages": [
+        { "name": "PyTorch", "iconifyClass": "logos-pytorch" },
+        { "name": "PyTorch Geometric", "iconifyClass": "logos-pytorch" },
+        { "name": "OpenCV", "iconifyClass": "logos-opencv" },
+        { "name": "Docker", "iconifyClass": "logos-docker-icon" }
+      ]
+    },
+    {
+      "id": "raja-06",
+      "name": "Intelligent Reconfigurable Surfaces for UAV Communications",
+      "createdAt": "2023-2024",
+      "url": "#",
+      "description": "Final year undergraduate research project funded by NESCOM, sole undergraduate recipient of NESCOM Research Funding in the department. Investigated intelligent reconfigurable surfaces for UAV communication links using learning-based beamforming.",
+      "isFork": false,
+      "languages": [
+        { "name": "Python", "iconifyClass": "logos-python" },
+        { "name": "MATLAB", "iconifyClass": "simple-icons:matlab" }
+      ]
+    }
+  ]
+}

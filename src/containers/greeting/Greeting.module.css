@@ -1,0 +1,245 @@
+.greet-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px 40px 40px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.hero-title {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 400;
+  max-width: 560px;
+  margin: 0 0 36px 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.primary-btn,
+.ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: 1px solid;
+  border-radius: 6px;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  opacity: 1 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ghost-btn {
+  background: transparent;
+}
+
+.ghost-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  opacity: 1 !important;
+}
+
+.ghost-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 22px;
+  border: 1px solid;
+  border-radius: 6px;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease;
+}
+
+.ghost-link:hover {
+  background: rgba(0, 0, 0, 0.04);
+  opacity: 1 !important;
+}
+
+.social-row {
+  margin-top: 8px;
+}
+
+/* HERO IMAGE */
+.hero-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-ring {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 2px solid;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* NEURA-X SECTION */
+.neurax-section {
+  margin-top: 90px;
+  padding-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.neurax-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 40px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.neurax-badge {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.neurax-title {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0 0 20px 0;
+}
+
+.neurax-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.neurax-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.neurax-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.pillar {
+  position: relative;
+  padding-left: 22px;
+}
+
+.pillar-dot {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.pillar-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.pillar-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-title { font-size: 56px; }
+  .hero-image-ring { width: 280px; height: 280px; }
+  .neurax-title { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+  .greet-main { padding: 40px 20px 30px 20px; }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+    min-height: auto;
+  }
+  .hero-title { font-size: 44px; }
+  .hero-subtitle { font-size: 16px; margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-image-ring { width: 240px; height: 240px; }
+  .neurax-card {
+    grid-template-columns: 1fr;
+    padding: 28px 24px;
+    gap: 30px;
+  }
+  .neurax-title { font-size: 28px; }
+}

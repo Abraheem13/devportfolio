@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #FAFAF8;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Serif headings, Clarity vibe */
+h1, h2, h3, h4 {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+h1 { font-weight: 500; }
+h2 { font-weight: 500; }
+h3 { font-weight: 600; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Override the older Google Sans refs used throughout, map to serif/inter */
+[class*="heading-text"],
+[class*="heading-sub-text"] {
+  font-family: 'EB Garamond', 'Georgia', serif !important;
+}
+
+/* Ensure particle background sits below content */
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle selection */
+::selection {
+  background: rgba(14, 107, 168, 0.18);
+  color: #0A0A0A;
+}
+
+/* Link hover refinement */
+a:hover {
+  opacity: 0.75;
+  transition: opacity 0.18s ease;
+}

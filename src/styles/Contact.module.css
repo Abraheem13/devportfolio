@@ -1,0 +1,45 @@
+.contact-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px 40px 40px;
+}
+
+.basic-contact {
+  width: 100%;
+}
+
+.contact-heading-img-div {
+  display: none;
+}
+
+.contact-heading-text {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 0 0 18px 0;
+}
+
+.contact-header-detail-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: left;
+  max-width: 760px;
+  margin: 0 0 30px 0;
+}
+
+.resume-btn-div {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-main { padding: 40px 20px 30px 20px; }
+  .contact-heading-text { font-size: 40px; }
+  .contact-header-detail-text { font-size: 15px; }
+}

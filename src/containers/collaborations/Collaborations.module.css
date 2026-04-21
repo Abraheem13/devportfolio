@@ -1,0 +1,270 @@
+.collab-main { width: 100%; }
+
+.section { margin-bottom: 70px; }
+
+.section-heading {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin: 0 0 10px 0;
+}
+
+.section-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  margin: 0 0 28px 0;
+  max-width: 760px;
+  line-height: 1.6;
+}
+
+/* STATS */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat {
+  padding: 24px 20px;
+  border-left: 2px solid rgba(14, 107, 168, 0.3);
+}
+
+.stat-value {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stat-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* LINKEDIN CTA */
+.linkedin-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 32px 36px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  flex-wrap: wrap;
+}
+
+.cta-left { flex: 1 1 500px; min-width: 0; }
+
+.cta-heading {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.cta-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.cta-right { flex-shrink: 0; }
+
+.cta-btn {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 6px;
+  letter-spacing: 0.01em;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.cta-btn:hover { transform: translateY(-1px); opacity: 0.95 !important; }
+
+/* PROFESSOR GRID */
+.professors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.prof-card {
+  padding: 24px 26px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  height: 100%;
+}
+
+.prof-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.prof-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.prof-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.prof-ident { min-width: 0; flex: 1; }
+
+.prof-name {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+  line-height: 1.25;
+}
+
+.prof-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.prof-affiliation {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 12px 0;
+  line-height: 1.45;
+}
+
+.prof-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0 0 14px 0;
+}
+
+.prof-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.prof-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  padding: 22px 24px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.project-title {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.02em;
+}
+
+.project-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+}
+
+.project-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .section-heading { font-size: 28px; }
+  .stats-row { grid-template-columns: 1fr; }
+  .linkedin-cta { flex-direction: column; align-items: flex-start; padding: 26px; }
+  .cta-heading { font-size: 22px; }
+}
+
+.show-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.show-more-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 11px 24px;
+  border: 1px solid;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.show-more-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
