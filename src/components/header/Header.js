@@ -34,6 +34,10 @@ const navLinks = [
     name: "Projects",
   },
   {
+    url: "/neura-x",
+    name: "Neura-X",
+  },
+  {
     url: "/contact",
     name: "Contact Me",
   },

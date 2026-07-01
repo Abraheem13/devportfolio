@@ -143,6 +143,35 @@ const BlogsIndex = ({ theme }) => {
                 ))}
               </ul>
             </div>
+
+            {blogs.communityCTA && (
+              <div
+                className={styles["community-card"]}
+                style={{ borderColor: "rgba(228, 64, 95, 0.3)" }}
+              >
+                <h3
+                  className={styles["community-heading"]}
+                  style={{ color: theme.text }}
+                >
+                  {blogs.communityCTA.heading}
+                </h3>
+                <p
+                  className={styles["community-body"]}
+                  style={{ color: theme.secondaryText }}
+                >
+                  {blogs.communityCTA.body}
+                </p>
+                <a
+                  href={blogs.communityCTA.linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles["community-link"]}
+                  style={{ background: "#E4405F", color: "#fff" }}
+                >
+                  {blogs.communityCTA.linkText}
+                </a>
+              </div>
+            )}
           </aside>
         </div>
       </div>

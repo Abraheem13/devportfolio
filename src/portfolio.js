@@ -1,103 +1,69 @@
 /* Portfolio configuration, Raja Abraheem Rashid */
 
-// Website related settings
 const settings = {
   isSplash: false,
 };
 
-// Home Page
 const greeting = {
   title: "Raja Abraheem Rashid",
   logo_name: "Abraheem Rashid",
   nickname: "",
   subTitle:
-    "AI/ML Researcher, working on nested learning, federated learning, and trustworthy AI. Building scalable, privacy-preserving intelligent systems across research and industry.",
+    "AI/ML Researcher working on nested learning, federated learning, and trustworthy AI. Building scalable, privacy-preserving intelligent systems across research and industry.",
   resumeLink: "",
   portfolio_repository: "https://github.com/Abraheem13",
 };
 
 const socialMediaLinks = [
-  {
-    name: "Github",
-    link: "https://github.com/Abraheem13",
-    fontAwesomeIcon: "fa-github",
-    backgroundColor: "#181717",
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/abraheem-rashid-8b46102a9/",
-    fontAwesomeIcon: "fa-linkedin",
-    backgroundColor: "#0077B5",
-  },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/abraheem_rashid/",
-    fontAwesomeIcon: "fa-instagram",
-    backgroundColor: "#E4405F",
-  },
-  {
-    name: "Gmail",
-    link: "mailto:abraheemrashid@outlook.com",
-    fontAwesomeIcon: "fa-google",
-    backgroundColor: "#D14836",
-  },
+  { name: "Github", link: "https://github.com/Abraheem13", fontAwesomeIcon: "fa-github", backgroundColor: "#181717" },
+  { name: "LinkedIn", link: "https://www.linkedin.com/in/abraheem-rashid-8b46102a9/", fontAwesomeIcon: "fa-linkedin", backgroundColor: "#0077B5" },
+  { name: "Instagram", link: "https://www.instagram.com/abraheem_rashid/", fontAwesomeIcon: "fa-instagram", backgroundColor: "#E4405F" },
+  { name: "Gmail", link: "mailto:abraheemrashid@outlook.com", fontAwesomeIcon: "fa-google", backgroundColor: "#D14836" },
 ];
 
-const socialMediaLinksHome = [
-  {
-    name: "Github",
-    link: "https://github.com/Abraheem13",
-    fontAwesomeIcon: "fa-github",
-    backgroundColor: "#181717",
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/abraheem-rashid-8b46102a9/",
-    fontAwesomeIcon: "fa-linkedin",
-    backgroundColor: "#0077B5",
-  },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/abraheem_rashid/",
-    fontAwesomeIcon: "fa-instagram",
-    backgroundColor: "#E4405F",
-  },
-  {
-    name: "Gmail",
-    link: "mailto:abraheemrashid@outlook.com",
-    fontAwesomeIcon: "fa-google",
-    backgroundColor: "#D14836",
-  },
-];
+const socialMediaLinksHome = socialMediaLinks;
 
 // ===========================================================================
-// NEURA-X, Digitalisation with AI (home page highlight section)
+// NEURA-X (used both on home page teaser and on the dedicated /neura-x page)
 // ===========================================================================
 const neuraX = {
   badge: "Founder",
   title: "Neura-X",
   tagline: "Digitalisation with AI",
+  shortIntro:
+    "A research-grounded AI venture I founded to build practical frameworks at the intersection of applied AI and enterprise digitalisation.",
   description:
-    "Alongside my research, I founded Neura-X, a venture focused on building practical AI frameworks at the intersection of applied AI and enterprise digitalisation. Drawing on hands-on experience from Curium (autonomous-vehicle perception) and INK AI, Neura-X develops scalable solutions using frontier AI technologies such as retrieval-augmented generation, agentic pipelines, efficient transformers, and trustworthy ML systems. Our work is deliberately research-grounded: every framework and deployment is shaped by the same rigour that drives my academic publications. Alongside developing proprietary frameworks, we are also working with clients worldwide, from early-stage founders to established enterprises, helping them operationalise AI effectively without paying the hidden costs of poorly engineered machine learning systems.",
+    "Alongside my research, I founded Neura-X, a venture focused on building practical AI frameworks at the intersection of applied AI and enterprise digitalisation. Drawing on hands-on experience from Curium and INK AI, Neura-X develops scalable solutions using frontier AI technologies such as retrieval-augmented generation, agentic pipelines, efficient transformers, and trustworthy ML systems. Our work is deliberately research-grounded: every framework and deployment is shaped by the same rigour that drives my academic publications.",
+  londonAnnouncement: {
+    tag: "New",
+    heading: "Neura-X is now operating in London",
+    body:
+      "We have officially started operations in the United Kingdom. Working from London puts us close to some of the strongest AI research ecosystems in Europe and to the enterprises we most want to work with. New plans, new frameworks, and new partnerships are on the way, more details coming soon.",
+  },
   pillars: [
+    { title: "Agentic & LLM Systems", description: "Production-grade RAG, multi-agent orchestration, fine-tuning (LoRA/QLoRA), and quantised inference." },
+    { title: "Computer Vision & Perception", description: "Industrial monitoring, multi-sensor calibration, and real-time CV pipelines built for edge deployment." },
+    { title: "Trustworthy ML", description: "Federated learning, privacy-preserving pipelines, and explainability evaluation under real-world drift." },
+  ],
+  approach: [
     {
-      title: "Agentic & LLM Systems",
-      description:
-        "Production-grade RAG, multi-agent orchestration, fine-tuning (LoRA/QLoRA), and quantised inference.",
+      title: "Research-First Engineering",
+      body: "Every engagement starts from a hypothesis, not a template. We build production systems the same way we build publishable research: reproducible, benchmarked, and honest about failure modes.",
     },
     {
-      title: "Computer Vision & Perception",
-      description:
-        "Industrial monitoring, multi-sensor calibration, and real-time CV pipelines built for edge deployment.",
+      title: "Frameworks, Not One-Off Builds",
+      body: "The proprietary frameworks we develop across projects, on RAG orchestration, federated pipelines, and cost-aware LLM routing, compound over time. Every client benefits from what came before.",
     },
     {
-      title: "Trustworthy ML",
-      description:
-        "Federated learning, privacy-preserving pipelines, and explainability evaluation under real-world drift.",
+      title: "Enterprise-Ready From Day One",
+      body: "Trustworthy ML, privacy-preserving architectures, and observability are not afterthoughts. They are baked in from the first sprint so the system you ship is the system you can defend.",
     },
   ],
   role: "Founder & Technical Lead",
-  link: "#",
+  location: "London, United Kingdom",
+  link: "/neura-x",
+  ctaLabel: "Learn more about Neura-X",
+  contactEmail: "abraheemrashid@outlook.com",
 };
 
 const skills = {
@@ -184,9 +150,9 @@ const degrees = {
       alt_name: "Brunel University London",
       duration: "2025-2026",
       descriptions: [
-        "⚡ Dissertation: Agentic AI for Autonomous Financial Analysis, Design, Implementation, and Evaluation of a Fully Functional LLM-Powered Equity Research System.",
+        "⚡ Dissertation: TokenGuard, an adaptive orchestration layer for cost-efficient LLM agent systems combining semantic caching, complexity-aware model routing, and adaptive plan reuse, with a reproducible cost-latency-quality benchmark.",
         "⚡ Relevant coursework: Advanced Deep Learning, Statistical Learning Theory, Convex Optimization, Information Theory.",
-        "⚡ Benchmarking hallucination rates, hierarchical reasoning quality, and factual accuracy of LLM-generated equity research against analyst-produced ground truth.",
+        "⚡ Focus on efficient and agentic LLM systems, and their evaluation under realistic deployment constraints.",
       ],
       website_link: "https://www.brunel.ac.uk/",
     },
@@ -208,12 +174,12 @@ const degrees = {
 
 const certifications = {
   certifications: [
-    { title: "CISPA Summer School 2026", subtitle: "- Helmholtz Center for Information Security", logo_path: "education.svg", certificate_link: "", alt_name: "CISPA", color_code: "#1F4E79" },
-    { title: "Youngest Engineer, National AI Research Team", subtitle: "- NCERT, Government of Pakistan", logo_path: "education.svg", certificate_link: "", alt_name: "NCERT", color_code: "#0E6BA8" },
-    { title: "Letter of Appreciation", subtitle: "- Director General, National CERT", logo_path: "education.svg", certificate_link: "", alt_name: "DG NCERT", color_code: "#005F73" },
-    { title: "NESCOM Research Funding", subtitle: "- Intelligent UAV Communications (sole UG recipient)", logo_path: "education.svg", certificate_link: "", alt_name: "NESCOM", color_code: "#003049" },
-    { title: "Research Leadership & Supervision", subtitle: "- Co-supervising UG research at IBA Karachi", logo_path: "education.svg", certificate_link: "", alt_name: "IBA Karachi", color_code: "#8D0801" },
-    { title: "Promoted to AI Researcher & Co-Investigator", subtitle: "- Telecommunications Research Lab, IBA", logo_path: "education.svg", certificate_link: "", alt_name: "TRL IBA", color_code: "#22223B" },
+    { title: "CISPA Summer School 2026", subtitle: "Helmholtz Center for Information Security, Federated Learning track", logo_path: "education.svg", certificate_link: "", alt_name: "CISPA", color_code: "#1F4E79" },
+    { title: "Selected to Pakistan's National AI Research Team", subtitle: "NCERT, Government of Pakistan", logo_path: "education.svg", certificate_link: "", alt_name: "NCERT", color_code: "#0E6BA8" },
+    { title: "Letter of Appreciation from the Director General", subtitle: "National Cyber Emergency Response Team", logo_path: "education.svg", certificate_link: "", alt_name: "DG NCERT", color_code: "#005F73" },
+    { title: "NESCOM Research Funding", subtitle: "Sole undergraduate recipient, intelligent UAV communications", logo_path: "education.svg", certificate_link: "", alt_name: "NESCOM", color_code: "#003049" },
+    { title: "Research Leadership & Supervision", subtitle: "Co-supervising undergraduate research at IBA Karachi", logo_path: "education.svg", certificate_link: "", alt_name: "IBA Karachi", color_code: "#8D0801" },
+    { title: "Industry Trainer, IBA CICT", subtitle: "Professional program on Agentic AI & Intelligent Automation (MOL Group)", logo_path: "education.svg", certificate_link: "", alt_name: "IBA CICT", color_code: "#22223B" },
   ],
 };
 
@@ -228,26 +194,37 @@ const experience = {
       title: "Industry",
       experiences: [
         {
-          title: "AI/ML Engineer",
-          company: "Curium",
-          company_url: "#",
-          logo_path: "Curium-logo.png",
-          duration: "Feb 2026-Present",
-          location: "Singapore (Remote)",
+          title: "AI/ML Software Engineer",
+          company: "Electronic Media Services Limited (EMS)",
+          company_url: "https://www.ems-uk.com/",
+          logo_path: "ems-logo.png",
+          duration: "Jul 2026-Present",
+          location: "Hampshire, United Kingdom (Remote)",
           description:
-            "Curium pioneers Continuous Dynamic Calibration™ (CDC), a proprietary multi-sensor calibration platform spanning LiDAR, Radar, and Camera modalities, enabling rapid escalation of autonomous systems to Level 4 and 5 automation. I develop ML pipelines and AI algorithms for automated multi-sensor calibration, ensuring accuracy and reliability of perception data across ADAS and autonomous vehicle deployments.",
-          color: "#ee3c26",
+            "AI/ML Software Engineer at EMS Connectivity Solutions, a UK connectivity and AI company based in Hampshire. Working on the AI and machine learning stack across EMS's product line, contributing to the design and engineering of production ML systems that serve real customers. Role reports into the CEO and combines applied ML engineering with research-informed decision making.",
+          color: "#0E6BA8",
         },
         {
           title: "Founder",
           company: "Neura-X",
-          company_url: "#",
+          company_url: "/neura-x",
           logo_path: "Neura-X_logo.png",
           duration: "Nov 2024-Present",
-          location: "London, UK",
+          location: "London, United Kingdom",
           description:
-            "Founded and lead Neura-X, a research-grounded AI consultancy at the intersection of applied AI and enterprise digitalisation. The firm translates frontier AI like RAG, agentic pipelines, efficient transformers, and trustworthy ML into production systems. Delivered engagements spanning computer vision, speech intelligence, and enterprise retrieval-augmented generation. Conducts independent research on efficient transformer architectures for long-context and irregular time-series data in cybersecurity contexts.",
+            "Founded and lead Neura-X, a research-grounded AI venture at the intersection of applied AI and enterprise digitalisation. The firm translates frontier AI (RAG, agentic pipelines, efficient transformers, trustworthy ML) into production systems. Now operating in London with plans for expansion.",
           color: "#0879bf",
+        },
+        {
+          title: "AI/ML Engineer",
+          company: "Curium",
+          company_url: "#",
+          logo_path: "Curium-logo.png",
+          duration: "Feb 2026-Jun 2026",
+          location: "Singapore (Remote)",
+          description:
+            "Curium pioneers Continuous Dynamic Calibration™ (CDC), a proprietary multi-sensor calibration platform spanning LiDAR, Radar, and Camera modalities, enabling rapid escalation of autonomous systems to Level 4 and 5 automation. Developed ML pipelines and AI algorithms for automated multi-sensor calibration across ADAS and autonomous vehicle deployments. Role concluded to focus on new opportunities.",
+          color: "#ee3c26",
         },
       ],
     },
@@ -260,9 +237,9 @@ const experience = {
           company_url: "https://trl.iba.edu.pk/",
           logo_path: "IBA-logo.png",
           duration: "Jul 2025-Present",
-          location: "Pakistan (Remote)",
+          location: "Remote (Karachi, Pakistan)",
           description:
-            "Promoted from Research Associate to AI Researcher and Co-Investigator within months of joining, in recognition of independent research capability and consistent contribution to the lab's publication pipeline (A* conferences and top-tier IEEE/ACM journals). Designing multi-frequency hierarchical learning frameworks that jointly address scalability, client heterogeneity, and catastrophic forgetting in federated settings. Developing a nested federated unlearning scheme enabling selective knowledge removal without full model retraining. Collaborating with researchers ranked in the top 2% globally based on citation impact; co-authors span the UK, US, UAE, Pakistan, Saudi Arabia, and Oman.",
+            "Promoted from Research Associate to AI Researcher and Co-Investigator within months of joining, in recognition of independent research capability and consistent contribution to the lab's publication pipeline (A* conferences and top-tier IEEE/ACM journals). Designing multi-frequency hierarchical learning frameworks that jointly address scalability, client heterogeneity, and catastrophic forgetting in federated settings. Developing a nested federated unlearning scheme enabling selective knowledge removal without full model retraining. Collaborating with researchers ranked in the top 2% globally by citation impact; co-authors span the UK, US, UAE, Pakistan, Saudi Arabia, and Oman.",
           color: "#0E6BA8",
         },
         {
@@ -294,11 +271,149 @@ const projectsHeader = {
 const blogs = {
   title: "Writing",
   subtitle:
-    "Technical notes on the research I work on, nested learning, federated learning, trustworthy AI, and the engineering that makes them real.",
+    "Technical notes on the research I work on: nested learning, federated learning, trustworthy AI, agentic systems, and the engineering that makes them real. I also write on the wider AI landscape and the ideas at its edges.",
   tagline: "New post every Sunday, stay tuned.",
+  communityCTA: {
+    heading: "Building an AI community on Instagram",
+    body:
+      "I'm also building a small AI community on Instagram (@abraheem_rashid) where I share short-form notes on AI research, systems, and the craft of building things that matter. Come say hi.",
+    linkText: "Follow on Instagram →",
+    linkUrl: "https://www.instagram.com/abraheem_rashid/",
+  },
   link: "/blogs",
   avatar_image_path: "blogs_image.svg",
   section: [
+    {
+      slug: "dyson-swarms-and-ai-compute",
+      title: "Dyson Swarms, AI Compute, and the Real Bottleneck",
+      date: "22-06-2026",
+      readTime: "10 min",
+      category: "Perspective",
+      tagline: "What Kardashev-scale energy engineering tells us about where AI compute is really going.",
+      text: `A Dyson swarm, the idea of harvesting a substantial fraction of a star's energy output with a distributed cloud of collectors, is usually treated as speculative astrophysics. It is more relevant to modern AI than most people realise, because the constraint it addresses (energy) is also the constraint that will define the next decade of machine learning.
+
+We talk about compute as if it's abstract. It isn't. Every FLOP is heat. Every trained model is a receipt written in kilowatt-hours. Frontier models today cost tens of megawatts to train; the trajectory is heading toward gigawatts. Extrapolate the current curve for a few more doublings and the bottleneck stops being GPUs and starts being electricity generation itself.
+
+That is where the Dyson swarm framing becomes useful, not as a plan, but as a way of asking the right question. What does a civilisation whose primary constraint is compute actually need? It needs sources of energy that scale not with mining, not with fabrication, but with fundamental physics. Solar collectors on Earth are the current answer. Space-based solar is the near-term escalation. A Dyson swarm is what you get if you keep extrapolating.
+
+The nearer, more actionable version of this argument is simpler: **the future of AI is going to be shaped less by algorithms and more by energy economics.** Three things follow from that.
+
+**One: efficiency research becomes a scarce commodity.** Every 2× improvement in FLOPs-per-Watt is worth more, in strategic terms, than a 2× improvement in accuracy. This is why work on quantisation, sparse mixtures, and cost-aware routing (the exact space my TokenGuard dissertation sits in) is not a niche, it is the next mainstream.
+
+**Two: the geography of compute changes.** Data centres will migrate to wherever electricity is cheapest and coolest: Iceland, the Arabian Gulf, high-altitude deserts, eventually orbit. The old assumption that AI infrastructure sits near its users breaks.
+
+**Three: the ethical frame shifts.** When training a model costs a small country's daily electricity, the question is not just "is this useful?" It is "was this the right thing to spend the energy on?" Compute ethics starts to look like carbon ethics, and the conversation gets sharper.
+
+The Dyson swarm image is science fiction. The forces it points at are not. AI's next decade will be a story about how much of the sun we can catch, and what we choose to do with it.`,
+      image: "",
+      url: "",
+    },
+    {
+      slug: "tokenguard-and-llm-cost-engineering",
+      title: "Cost-Aware LLMs: Notes from Building TokenGuard",
+      date: "15-06-2026",
+      readTime: "9 min",
+      category: "Applied Research",
+      tagline: "What I learned building an adaptive orchestration layer for cost-efficient LLM agents.",
+      text: `TokenGuard, my MSc dissertation, is an orchestration layer for LLM agent systems. It combines three things: semantic caching, complexity-aware model routing, and adaptive plan reuse. The premise is unglamorous but critical, most real-world agent deployments waste enormous amounts of compute because they never ask whether they need it in the first place.
+
+The default assumption in agent design is that "smarter is better." Route everything through GPT-4 or Claude Opus. Cache nothing. Re-plan from scratch each turn. This is fine when compute is cheap and latency doesn't matter. It is catastrophic when either of those assumptions breaks, and both break in production.
+
+Three observations from the build.
+
+**Semantic caching is not a hack, it is architecture.** Most agent queries are near-duplicates of previous queries. Not exact-match cacheable, but semantically nearby. A well-designed cache with an embedding-based lookup absorbs 30-60% of production traffic depending on domain. This isn't a "nice to have," it is the difference between viable and non-viable unit economics.
+
+**Complexity-aware routing is undervalued.** Most tasks do not need frontier-scale models. A small classifier that decides "is this a task where a 7B model would be sufficient" pays for itself within days. The trick is calibrating the classifier so it fails safe: when uncertain, route up. When confident, route down.
+
+**Plan reuse is where the biggest wins hide.** Agent plans are often deterministic given the same task class. If you can recognise that a query belongs to a task class you've seen before, you can reuse the plan and only re-run the leaf steps. This alone can reduce end-to-end latency by 3-5× on repeat traffic.
+
+None of these ideas are exotic. What made TokenGuard interesting was combining them into a single benchmarkable layer, with a reproducible cost-latency-quality Pareto frontier. The results section is honest about failure modes: adaptive plan reuse hurts when the underlying environment drifts, complexity routing hurts when the classifier drifts, semantic caching hurts when the embedding model drifts. Everything drifts. Every optimisation has a temporal half-life.
+
+The larger point: LLM cost engineering is a first-class research problem now, not a "practitioner detail." I expect it will have its own venues within two years.`,
+      image: "",
+      url: "",
+    },
+    {
+      slug: "continual-learning-quiet-revolution",
+      title: "Continual Learning: The Quiet Revolution",
+      date: "08-06-2026",
+      readTime: "8 min",
+      category: "Deep Dive",
+      tagline: "Why 'never train from scratch again' is closer than most researchers realise.",
+      text: `Most production ML systems today are built on a strange assumption: that the model you deployed on day one should still be the model running on day 300. Retraining is treated as an exception, an expensive event triggered when metrics finally drift far enough to be embarrassing. This is a legacy of how compute used to be priced.
+
+That legacy is ending. Continual learning, models that update in flight without full retraining, has quietly gone from research niche to shipping technology in the last eighteen months. And most people haven't noticed.
+
+The core problem is old: catastrophic forgetting. When you fine-tune a model on new data, the old representations shift. The system that could recognise cats on Monday cannot recognise cats on Tuesday because Monday's cat neurons got repurposed. The classical fixes (rehearsal buffers, elastic weight consolidation, progressive networks) all worked in the lab and mostly failed in production.
+
+What changed is architectural. Nested and modular architectures, the same family that motivates my nested learning research, treat different parts of the model as updating at different rates. Slow layers absorb structure. Fast layers absorb drift. The two do not fight each other because they are updating on different clocks.
+
+This maps onto a real, measurable capability. Systems built this way can absorb weeks of new data every day without full retraining, and without losing the capabilities they had before. That was not true three years ago at production quality. It is now.
+
+Three consequences follow.
+
+**Retraining as an event will become retraining as a background process.** Ops teams will stop budgeting for "the big Q3 retrain" and start budgeting for continuous drift absorption. Different discipline, different tooling, different failure modes.
+
+**Unlearning becomes tractable.** If your model updates continuously, removing a client's contribution is no longer a full-retrain problem, it is a targeted-forgetting problem. This is exactly what my nested federated unlearning work targets.
+
+**Evaluation gets harder.** A model that changes every day cannot be evaluated with a single benchmark run. We need continuous evaluation, drift-aware evaluation, and behavioural regression testing. The tools do not yet exist. Building them is one of the more interesting open problems in the field.
+
+The quiet revolution is that "always training" is becoming the default rather than the exotic. The loud revolutions in AI, the ones that get press, are almost always downstream of quiet architectural shifts like this.`,
+      image: "",
+      url: "",
+    },
+    {
+      slug: "rag-failure-modes",
+      title: "RAG Doesn't Fail Where You Think It Fails",
+      date: "01-06-2026",
+      readTime: "9 min",
+      category: "Technical",
+      tagline: "Notes from building enterprise RAG systems that had to survive contact with production.",
+      text: `Retrieval-Augmented Generation is often sold as "just add retrieval and your hallucinations disappear." Anyone who has actually shipped a RAG system to enterprise users knows this is false. RAG changes the failure mode; it does not eliminate it. Understanding where it breaks is far more useful than believing it doesn't.
+
+I have built several RAG systems in production, including the enterprise multi-agent RAG we shipped at Neura-X, which improved end-to-end accuracy from 76% (dense-only) to 89% at sub-200ms latency. Here are the failure modes that actually mattered, ranked by how much operational pain they caused.
+
+**1. Retrieval quality collapse under domain shift.** Dense embeddings degrade gracefully in the average case and catastrophically in the tail. When a user asks a slightly out-of-domain question, similarity scores stay high but relevance drops. The system confidently retrieves the wrong document and confidently generates from it. Hybrid retrieval (dense + sparse + re-ranking) is not optional. It is the difference between "usable" and "product-killer."
+
+**2. Chunk boundary artefacts.** How you split documents matters more than any other single choice. Bad chunking produces mid-sentence context, orphaned tables, split lists. The generator dutifully makes up plausible-sounding fills. Investing in semantic chunking, chunking that respects document structure, is the highest ROI intervention I have ever measured in a RAG stack.
+
+**3. Retrieval-generation misalignment.** Even with perfect retrieval, the generator sometimes ignores what was retrieved and confabulates. This is a training artefact of instruction-tuned LLMs: they want to answer, whether or not the context supports it. Explicit prompt scaffolding ("if the context does not answer the question, say so") helps but does not solve it. The real fix is reranker-based context filtering upstream, so weak context never reaches the generator.
+
+**4. Evaluation is a lie.** Most RAG benchmarks use synthetic queries and clean corpora. Production traffic is dirty, ambiguous, and drift-prone. A RAG system that scores 0.9 on a benchmark can score 0.4 on real traffic within a week of deployment. Build your own evaluation pipeline against real user queries or accept that your metrics are decorative.
+
+**5. Latency is a first-class concern.** Users tolerate wrong answers better than they tolerate slow answers. A 200ms slow response feels broken. Get comfortable with quantisation, batching, and re-ranker distillation. The alternative is a beautiful system nobody uses.
+
+None of these are theoretical. Each one bit us in production and cost real time to fix. If you're building a RAG system for real users, plan the fixes in from day one.`,
+      image: "",
+      url: "",
+    },
+    {
+      slug: "agentic-evaluation-blind-spot",
+      title: "The Agentic AI Evaluation Blind Spot",
+      date: "25-05-2026",
+      readTime: "8 min",
+      category: "Perspective",
+      tagline: "Why current benchmarks miss the failure modes that matter most in production agents.",
+      text: `Agent benchmarks are having a moment. Every few weeks a new leaderboard drops, new agent architecture claims state-of-the-art, new paper argues that agents are almost ready for real work. Most of these claims are worth a fraction of what their authors think they are, because the benchmarks measure the wrong things.
+
+Concretely, the standard agent evaluation setup goes like this. You give the agent a task. You give it tools. You measure whether it completes the task. You compute a success rate. You publish.
+
+This misses at least four failure modes that dominate real deployments.
+
+**Recovery from partial failure.** In production, tools fail. APIs rate-limit. Retrievers time out. Databases return stale reads. A good agent notices this, reasons about it, and adapts. A brittle agent silently fails or, worse, silently succeeds with wrong output. Benchmarks that only measure success on clean runs never see this dimension.
+
+**Cost calibration.** An agent that uses 40 tool calls when 3 would suffice is technically correct and economically ruinous. Success-rate benchmarks reward brute force. Real deployments punish it. We need benchmarks that jointly report success rate, tool-call count, and total token spend, ideally as a Pareto frontier.
+
+**Hallucination under uncertainty.** When an agent doesn't have enough information, does it ask for more, or does it invent? Ninety percent of benchmarks structure the task so this never comes up. Real users routinely give underspecified requests. Agent honesty in the face of ambiguity is a first-class capability that almost no benchmark measures.
+
+**Chain-of-reasoning drift.** In multi-step tasks, agents often lose track of their own earlier commitments. Step 3 contradicts step 1. Step 5 fabricates a fact "established" in step 2. This is not a length problem, it is a coherence problem. And it needs its own evaluation methodology, ideally something like structured contradiction detection across an agent's own transcript.
+
+I ran into all four of these when benchmarking the agentic pipeline for my equity research dissertation. The system passes the standard "did it produce a report?" test. It fails, sometimes, at the "is the report internally consistent?" test. Both are important. Only one is currently measured.
+
+The field is going to have to grow up on this. Real agent evaluation looks less like a leaderboard and more like an audit.`,
+      image: "",
+      url: "",
+    },
     {
       slug: "nested-learning-google",
       title: "Nested Learning, Explained: Why Google's New Paradigm Matters",
@@ -429,30 +544,10 @@ None of these are solved. All of them are tractable. Most of what I write going 
   ],
 
   featuredPapers: [
-    {
-      title: "Nested Learning: A New Paradigm for Long-Horizon Learning",
-      authors: "Google Research",
-      venue: "arXiv, 2025",
-      note: "Foundational motivation for my nested learning research programme.",
-    },
-    {
-      title: "Matryoshka Representation Learning",
-      authors: "Kusupati et al.",
-      venue: "NeurIPS, 2022",
-      note: "Directly informs my wearable-to-cloud ECG classification work.",
-    },
-    {
-      title: "Federated Learning: Challenges, Methods, and Future Directions",
-      authors: "Li, Sahu, Talwalkar, Smith",
-      venue: "IEEE Signal Processing Magazine, 2020",
-      note: "The survey that still defines the field's open problems.",
-    },
-    {
-      title: "Tree of Thoughts: Deliberate Problem Solving with LLMs",
-      authors: "Yao et al.",
-      venue: "NeurIPS, 2023",
-      note: "Changed how I design agentic reasoning pipelines.",
-    },
+    { title: "Nested Learning: A New Paradigm for Long-Horizon Learning", authors: "Google Research", venue: "arXiv, 2025", note: "Foundational motivation for my nested learning research programme." },
+    { title: "Matryoshka Representation Learning", authors: "Kusupati et al.", venue: "NeurIPS, 2022", note: "Directly informs my wearable-to-cloud ECG classification work." },
+    { title: "Federated Learning: Challenges, Methods, and Future Directions", authors: "Li, Sahu, Talwalkar, Smith", venue: "IEEE Signal Processing Magazine, 2020", note: "The survey that still defines the field's open problems." },
+    { title: "Tree of Thoughts: Deliberate Problem Solving with LLMs", authors: "Yao et al.", venue: "NeurIPS, 2023", note: "Changed how I design agentic reasoning pipelines." },
   ],
 };
 
@@ -461,7 +556,7 @@ const contactPageData = {
     title: "Contact",
     profile_image_path: "address_image.svg",
     description:
-      "Open to job opportunities, research collaborations, joint ventures, PhD discussions, and conversations about machine learning, federated learning, trustworthy AI, and agentic systems. Whether you're a lab looking for a research partner, a company building production ML systems, or a founder exploring a joint venture, I'd like to hear from you. The fastest way to reach me is email or LinkedIn.",
+      "Open to job opportunities, research collaborations, joint ventures, PhD discussions, and conversations about machine learning, federated learning, trustworthy AI, and agentic systems. Whether you're a lab looking for a research partner, a company building production ML systems, or a founder exploring a joint venture, I'd like to hear from you. The fastest way to reach me is email or LinkedIn. I'm also building an AI community on Instagram (@abraheem_rashid) if you'd like a lighter, more day-to-day view of what I'm working on.",
   },
   addressSection: {
     title: "Location",
@@ -473,7 +568,7 @@ const contactPageData = {
 };
 
 // ===========================================================================
-// RESEARCH, Research areas and publications
+// RESEARCH
 // ===========================================================================
 const research = {
   title: "Research",
@@ -482,33 +577,83 @@ const research = {
     "My research sits at the intersection of scalable learning systems, distributed intelligence, and trustworthy AI. I work on methods that are both scientifically grounded and useful in practice, spanning nested learning, federated learning and unlearning, agentic AI, efficient transformers, and physics-informed reinforcement learning.",
   header_image_path: "experience.svg",
 
+  // TRL milestone banner shown at the top of the Research page
+  milestone: {
+    tag: "TRL, IBA · Milestone",
+    heading: "The Telecommunications Research Lab at IBA is growing",
+    body:
+      "Our first Q1 publication is now out in IEEE Open Journal of the Communications Society, and around 20 more manuscripts are currently under review or in preparation across top-tier IEEE, ACM, and Q1 venues. It has been a genuine privilege to help build a research pipeline like this alongside Dr. Faisal Iradat and our international collaborators.",
+    ctaLabel: "Read the published paper →",
+    ctaLink: "https://ieeexplore.ieee.org/",
+  },
+
   researchAreas: [
     { title: "Nested Learning", description: "Hierarchical, multi-frequency learning frameworks that capture structure across timescales. Applied to federated optimisation, RL safety, medical imaging, ECG classification, environmental change detection, and 6G network slicing.", color: "#0E6BA8" },
     { title: "Federated Learning & Unlearning", description: "Privacy-preserving distributed intelligence that handles client heterogeneity, catastrophic forgetting, and data-rights compliance, including selective knowledge removal without full model retraining.", color: "#005F73" },
     { title: "Trustworthy & Safe AI", description: "Safety architectures for human-AI interaction, including nested policy learning for developmentally adaptive child-AI safety and hard-constraint reinforcement learning with formal guarantees.", color: "#8D0801" },
-    { title: "Agentic AI & LLMs", description: "Multi-agent LLM pipelines for autonomous research and analysis, agentic financial analysis, skill-driven digital forensics orchestration, and benchmarking factual accuracy and hallucination rates.", color: "#22223B" },
+    { title: "Agentic AI & LLMs", description: "Multi-agent LLM pipelines for autonomous research and analysis, agentic financial analysis, skill-driven digital forensics orchestration, and cost-aware LLM routing (TokenGuard).", color: "#22223B" },
     { title: "Efficient Transformers", description: "Transformer architectures optimised for long-context modelling and irregular time-series data, with applications to cybersecurity, log analysis, and wearable-to-cloud continuum learning.", color: "#6A040F" },
     { title: "Applied ML for Security", description: "Pre-encryption ransomware detection, explanation stability under temporal malware drift, LLM-based threat classification, and national-scale SIEM pipelines for government cyber-defence.", color: "#003049" },
   ],
 
   publications: [
+    // ================ PUBLISHED ================
     {
       title: "Nested Multi-Agent Reinforcement Learning for Adaptive Resource Management in 6G Network Slicing: A Multi-Timescale Framework with Convergence Guarantees",
-      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal",
+      authors: "R. A. R. Ejaz, F. Iradat, I. Syed, K. Khan",
       venue: "IEEE Open Journal of the Communications Society",
       type: "Journal",
-      status: "Under Review",
+      status: "Published",
       year: "2026",
       areas: ["Nested Learning", "Reinforcement Learning", "6G"],
+      links: {
+        paper: "https://lnkd.in/eNrQ5e9S",
+        researchGate: "https://lnkd.in/eXY8KGMP",
+        scholar: "https://lnkd.in/eVWyAhWv",
+      },
       description:
-        "A multi-timescale nested multi-agent RL framework for adaptive resource management in 6G network slicing, with convergence guarantees for the coupled slow/fast update processes. Targets the scalability-stability trade-off in dense 6G deployments.",
+        "A multi-timescale nested multi-agent RL framework for adaptive resource management in 6G network slicing, with convergence guarantees for the coupled slow/fast update processes. Targets the scalability-stability trade-off in dense 6G deployments. First Q1 publication from our TRL, IBA research programme.",
+    },
+    // ================ ACCEPTED / IN PRESS ================
+    {
+      title: "Training-Free Coarse Point Cloud Registration via Axis-Projected Surface Area Matching",
+      authors: "R. A. R. Ejaz, F. Iradat",
+      venue: "ICCVDM 2026",
+      type: "Conference",
+      status: "Accepted",
+      year: "2026",
+      areas: ["Computer Vision", "Point Clouds"],
+      description:
+        "A training-free coarse point cloud registration technique using axis-projected surface area matching, useful as a fast initial alignment stage before ICP-style refinement.",
+    },
+    {
+      title: "HADES: Hierarchical Autonomous Digital Evidence System Using Skill-Driven Multi-Agent Orchestration for Digital Forensics",
+      authors: "R. A. R. Ejaz, Q. M. Waiz, F. Iradat",
+      venue: "WI 2026, Linz (poster)",
+      type: "Conference",
+      status: "Accepted",
+      year: "2026",
+      areas: ["Agentic AI", "Applied ML for Security"],
+      description:
+        "HADES orchestrates skill-driven agents in a hierarchical forensic pipeline, automating evidence acquisition, triage, and correlation across heterogeneous artefacts while preserving chain-of-custody semantics.",
+    },
+    {
+      title: "From AI to Generative AI: How Emerging Technologies Are Reshaping Public Trust",
+      authors: "E. Tariq, E. Tariq, I. S. Khan, R. A. R. Ejaz, F. Iradat",
+      venue: "WI 2026 (poster)",
+      type: "Conference",
+      status: "Accepted",
+      year: "2026",
+      areas: ["Trustworthy AI", "AI & Society"],
+      description:
+        "Examines shifts in public trust as AI systems transition from discriminative to generative paradigms, drawing on a cross-region survey of perceived risk, utility, and institutional readiness.",
     },
     {
       title: "Hierarchical Bayesian Nested Optimisation for Uncertainty-Aware Resource Allocation in 6G Open-RAN",
       authors: "R. A. R. Ejaz, Y. A. Bangash, F. Iradat, W. Iqbal",
       venue: "ICSL-DSGA 2026",
       type: "Conference",
-      status: "Under Review",
+      status: "Accepted",
       year: "2026",
       areas: ["Nested Learning", "Bayesian Methods", "6G"],
       description:
@@ -516,91 +661,26 @@ const research = {
     },
     {
       title: "TEMPEST: Temporal Execution Modeling for Pre-Encryption Ransomware Detection with Timestep-Level Explainability",
-      authors: "R. A. R. Ejaz et al.",
+      authors: "A. Khan, A. Ahmedani, A. A. Kiani, R. A. R. Ejaz, Y. A. Bangash, et al.",
       venue: "ICSL-DSGA 2026",
       type: "Conference",
-      status: "Under Review",
+      status: "Accepted",
       year: "2026",
       areas: ["Applied ML for Security", "Explainability"],
       description:
         "TEMPEST models the temporal execution signature of ransomware to detect it pre-encryption, before any file is locked, while maintaining timestep-level explainability so analysts can see why each decision was made.",
     },
+    // ================ UNDER REVIEW ================
     {
-      title: "Nested Learning with Attention-Guided Multi-Frequency Supervision for Hepatic Vessel Segmentation",
-      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal, A. Ahmad",
-      venue: "Neural Computing and Applications (Q1)",
+      title: "It's the Method, Not the Model: Explanation Collapse Under Temporal Malware Drift",
+      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal, M. Mansouri",
+      venue: "IEEE Open Journal of the Communications Society",
       type: "Journal",
       status: "Under Review",
       year: "2026",
-      areas: ["Nested Learning", "Medical Imaging"],
+      areas: ["Trustworthy AI", "Applied ML for Security"],
       description:
-        "Proposes a nested, attention-guided multi-frequency supervision scheme for segmenting hepatic vessels in medical CT. Hierarchical frequency decomposition with attention-gated fusion improves small-vessel recovery and boundary fidelity compared to single-scale baselines.",
-    },
-    {
-      title: "Nested Learning for Multi-Timescale Electric Vehicle Charging Coordination: A Physics-Informed Deep Reinforcement Learning Framework with Hard Voltage Guarantees",
-      authors: "R. A. R. Ejaz, N. Aburaed, F. Iradat",
-      venue: "IEEE Transactions on Smart Grid",
-      type: "Journal",
-      status: "Under Review",
-      year: "2026",
-      areas: ["Reinforcement Learning", "Nested Learning", "Physics-Informed ML"],
-      description:
-        "A physics-informed deep-RL controller for large-scale EV charging that operates over nested timescales and provides hard voltage-constraint guarantees, bridging learned policies with provable grid-safety margins.",
-    },
-    {
-      title: "SafeNest: Nested Policy Learning for Multi-Timescale Safety in Child-AI Interaction",
-      authors: "R. A. R. Ejaz, Y. A. Bangash, F. Iradat, M. Kumail",
-      venue: "Scientific Reports",
-      type: "Journal",
-      status: "Under Review",
-      year: "2026",
-      areas: ["Trustworthy AI", "Reinforcement Learning"],
-      description:
-        "SafeNest introduces nested policies where safety constraints are gated by developmental stage, enabling child-AI systems to adapt their interaction boundaries at multiple policy timescales rather than applying a single static filter.",
-    },
-    {
-      title: "A Multi-Timescale Safety Architecture for Developmentally Adaptive Child-AI Interaction via Nested Policy Learning",
-      authors: "R. A. R. Ejaz, F. Iradat, M. Kumail",
-      venue: "UKCI 2026",
-      type: "Conference",
-      status: "Under Review",
-      year: "2026",
-      areas: ["Trustworthy AI", "Nested Learning"],
-      description:
-        "Conference companion to SafeNest presenting the underlying multi-timescale safety architecture and empirical evaluation of developmentally adaptive constraint gating.",
-    },
-    {
-      title: "Nested Learning for Adaptive-Fidelity ECG Classification: Matryoshka Representation Learning Across the Wearable-to-Cloud Continuum",
-      authors: "R. A. R. Ejaz, M. W. Iqbal, F. Iradat, M. Kumail",
-      venue: "IEEE Xplore / IEEE Journal",
-      type: "Journal",
-      status: "Under Review",
-      year: "2026",
-      areas: ["Nested Learning", "Wearable ML"],
-      description:
-        "A Matryoshka-style nested representation scheme that allows ECG classifiers to run at reduced fidelity on wearables and expand smoothly to full-fidelity inference on cloud backends without separate model retraining.",
-    },
-    {
-      title: "Pre-Encryption Multi-layered Ransomware Detection Framework",
-      authors: "R. A. R. Ejaz, M. Deda, F. Iradat",
-      venue: "ARES 2026",
-      type: "Conference",
-      status: "Under Review",
-      year: "2026",
-      areas: ["Applied ML for Security"],
-      description:
-        "A layered detection framework that fires before encryption begins, combining behavioural, API-sequence, and file-entropy signals to stop ransomware earlier than post-encryption detectors.",
-    },
-    {
-      title: "HADES: Hierarchical Autonomous Digital Evidence System Using Skill-Driven Multi-Agent Orchestration for Digital Forensics",
-      authors: "R. A. R. Ejaz, Q. M. Waiz, F. Iradat",
-      venue: "WI 2026, Linz",
-      type: "Conference",
-      status: "Under Review",
-      year: "2026",
-      areas: ["Agentic AI", "Applied ML for Security"],
-      description:
-        "HADES orchestrates skill-driven agents in a hierarchical forensic pipeline, automating evidence acquisition, triage, and correlation across heterogeneous artefacts while preserving chain-of-custody semantics.",
+        "Shows empirically that under temporal malware drift, explanation-method choice, not model choice, dominates explanation stability. Has implications for how we evaluate XAI in non-stationary security settings. Submitted to IEEE OJ-COMS.",
     },
     {
       title: "Nested Federated Learning: Layer-Wise Multi-Frequency Synchronization for Privacy-Preserving Distributed Intelligence",
@@ -614,42 +694,109 @@ const research = {
         "Introduces layer-wise multi-frequency synchronisation across federated clients, addressing scalability and client heterogeneity by decoupling which layers synchronise at which cadence.",
     },
     {
-      title: "It's the Method, Not the Model: Explanation Collapse Under Temporal Malware Drift",
-      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal, M. Mansouri",
-      venue: "IEEE Open Journal of the Communications Society",
+      title: "Multi-Frequency Layer-Wise Aggregation for Federated Clinical Prediction Across Hospitals",
+      authors: "R. A. R. Ejaz, F. Iradat, M. I. Kharka, W. Iqbal",
+      venue: "IJEHMC (IGI Global)",
       type: "Journal",
       status: "Under Review",
       year: "2026",
-      areas: ["Trustworthy AI", "Applied ML for Security"],
+      areas: ["Federated Learning", "Medical Imaging"],
       description:
-        "Shows empirically that under temporal malware drift, explanation-method choice, not model choice, dominates explanation stability. Has implications for how we evaluate XAI in non-stationary security settings.",
+        "Layer-wise multi-frequency aggregation strategy for federated clinical prediction across hospitals, addressing distributional heterogeneity across institutions.",
     },
     {
-      title: "From AI to Generative AI: How Emerging Technologies Are Reshaping Public Trust",
-      authors: "E. Tariq, E. Tariq, I. S. Khan, R. A. R. Ejaz, F. Iradat",
-      venue: "WI 2026",
+      title: "Nested Learning for Adaptive-Fidelity ECG Classification: Matryoshka Representation Learning Across the Wearable-to-Cloud Continuum",
+      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal, M. Kumail",
+      venue: "IEEE Journal of Biomedical and Health Informatics",
+      type: "Journal",
+      status: "Under Review",
+      year: "2026",
+      areas: ["Nested Learning", "Wearable ML"],
+      description:
+        "A Matryoshka-style nested representation scheme that allows ECG classifiers to run at reduced fidelity on wearables and expand smoothly to full-fidelity inference on cloud backends without separate model retraining.",
+    },
+    {
+      title: "Nested Learning with Attention-Guided Multi-Frequency Supervision for Hepatic Vessel Segmentation",
+      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal, A. Ahmad",
+      venue: "Neural Computing and Applications (Q1)",
+      type: "Journal",
+      status: "Under Review",
+      year: "2026",
+      areas: ["Nested Learning", "Medical Imaging"],
+      description:
+        "Proposes a nested, attention-guided multi-frequency supervision scheme for segmenting hepatic vessels in medical CT. Hierarchical frequency decomposition with attention-gated fusion improves small-vessel recovery and boundary fidelity compared to single-scale baselines.",
+    },
+    {
+      title: "DP-f-FUM: Differentially Private Federated Unlearning via Per-Sample Clipping and Min-Max f-Divergence Optimisation",
+      authors: "R. A. R. Ejaz, F. Iradat, et al.",
+      venue: "FLTA 2026 (main track)",
       type: "Conference",
       status: "Under Review",
       year: "2026",
-      areas: ["Trustworthy AI", "AI & Society"],
+      areas: ["Federated Learning", "Trustworthy AI"],
       description:
-        "Examines shifts in public trust as AI systems transition from discriminative to generative paradigms, drawing on a cross-region survey of perceived risk, utility, and institutional readiness.",
+        "Differentially private federated unlearning combining per-sample clipping with min-max f-divergence optimisation for selective client removal with formal privacy guarantees.",
     },
     {
-      title: "The Impact of Female Under-representation in Cybersecurity on Women's Vulnerability to Cybercrime",
-      authors: "M. S. Baig, R. A. R. Ejaz, F. Iradat",
-      venue: "Gender, Technology and Development",
+      title: "Active-Ledger: Trust-Gated Diffusion and Behavioural Contribution Scoring for Adversarially Robust Federated ECG Arrhythmia Classification",
+      authors: "R. A. R. Ejaz, F. Iradat, et al.",
+      venue: "AJCAI 2026",
+      type: "Conference",
+      status: "Under Review",
+      year: "2026",
+      areas: ["Federated Learning", "Trustworthy AI"],
+      description:
+        "Trust-gated diffusion combined with behavioural contribution scoring for adversarially robust federated ECG arrhythmia classification.",
+    },
+    {
+      title: "FedSRIMU: Spectral Roughness-Informed Federated Unlearning for Privacy-Compliant IoT Intrusion Detection Systems",
+      authors: "A. M. Warris, Z. U. Ebad, R. A. R. Ejaz, F. Iradat",
+      venue: "UKCI 2026",
+      type: "Conference",
+      status: "Under Review",
+      year: "2026",
+      areas: ["Federated Learning", "Applied ML for Security"],
+      description:
+        "Spectral roughness-informed federated unlearning for privacy-compliant IoT intrusion detection systems. Companion undergraduate work I co-supervised.",
+    },
+    {
+      title: "SafeNest: Nested Policy Learning for Multi-Timescale Safety in Child-AI Interaction",
+      authors: "R. A. R. Ejaz, Y. A. Bangash, F. Iradat, M. Kumail",
+      venue: "Scientific Reports",
       type: "Journal",
       status: "Under Review",
       year: "2026",
-      areas: ["AI & Society"],
+      areas: ["Trustworthy AI", "Reinforcement Learning"],
       description:
-        "A scoping analysis connecting workforce composition in cybersecurity to downstream vulnerability patterns, with policy recommendations for inclusive threat-modelling and support infrastructure.",
+        "SafeNest introduces nested policies where safety constraints are gated by developmental stage, enabling child-AI systems to adapt their interaction boundaries at multiple policy timescales rather than applying a single static filter.",
     },
+    {
+      title: "Nested Learning for Multi-Timescale Electric Vehicle Charging Coordination: A Physics-Informed Deep RL Framework with Hard Voltage Guarantees",
+      authors: "R. A. R. Ejaz, N. Aburaed, F. Iradat",
+      venue: "IEEE Transactions on Smart Grid",
+      type: "Journal",
+      status: "Under Review",
+      year: "2026",
+      areas: ["Reinforcement Learning", "Nested Learning", "Physics-Informed ML"],
+      description:
+        "A physics-informed deep-RL controller for large-scale EV charging that operates over nested timescales and provides hard voltage-constraint guarantees, bridging learned policies with provable grid-safety margins.",
+    },
+    {
+      title: "NestAnt: A Nested-Learning Surrogate for Continual Multi-Band Microstrip Antenna Design",
+      authors: "R. A. R. Ejaz, F. Iradat, W. Iqbal, Y. A. Bangash",
+      venue: "IEEE GLOBECOM 2026 (ML for Communications & Networking)",
+      type: "Conference",
+      status: "Under Review",
+      year: "2026",
+      areas: ["Nested Learning", "Applied ML for Communications"],
+      description:
+        "Nested-learning surrogate for continual multi-band microstrip antenna design, targeting the transfer efficiency across neighbouring frequency bands.",
+    },
+    // ================ IN PREPARATION ================
     {
       title: "Nested Federated Unlearning: A Multi-Frequency Optimization Framework for Privacy-Preserving Distributed Intelligence",
       authors: "R. A. R. Ejaz et al.",
-      venue: "IEEE Transactions on Artificial Intelligence",
+      venue: "Target: IEEE Transactions on Artificial Intelligence",
       type: "Journal",
       status: "In Preparation",
       year: "2026",
@@ -658,48 +805,15 @@ const research = {
         "A nested, multi-frequency optimisation framework enabling selective client-level knowledge removal in federated settings without full model retraining, a step toward compliance with data-rights legislation at scale.",
     },
     {
-      title: "Employment and Job Retention in the AI Era in LMICs, A Scoping Study",
-      authors: "R. A. R. Ejaz, F. Iradat",
-      venue: "TBD",
-      type: "Journal",
-      status: "In Preparation",
-      year: "2026",
-      areas: ["AI & Society"],
-      description:
-        "Scoping study on how AI adoption is reshaping employment and job-retention patterns in low- and middle-income countries.",
-    },
-    {
-      title: "Psychological and Ethical Factors Affecting Student Acceptance of AI-Generated Academic Work",
-      authors: "R. A. R. Ejaz, F. Iradat",
-      venue: "TBD",
-      type: "Journal",
-      status: "In Preparation",
-      year: "2026",
-      areas: ["AI & Society"],
-      description:
-        "Empirical study of psychological and ethical factors driving student acceptance of AI-generated academic output, informing teaching-practice and policy design.",
-    },
-    {
       title: "A Nested Learning-Based Framework for Early Environmental Change Detection Using Multi-Temporal Remote Sensing Data",
       authors: "R. A. R. Ejaz et al.",
-      venue: "IEEE JSTARS",
+      venue: "Target: IEEE JSTARS",
       type: "Journal",
       status: "In Preparation",
       year: "2026",
       areas: ["Nested Learning", "Remote Sensing"],
       description:
         "Applies nested multi-frequency learning to multi-temporal satellite imagery for early-warning detection of environmental change, targeting signals that appear well before they are visible to single-scale detectors.",
-    },
-    {
-      title: "Evaluating LLM-Generated Equity Research: A Benchmark Study of Factual Accuracy, Hierarchical Reasoning Quality, and Hallucination Rates in AI-Driven Financial Reporting",
-      authors: "R. A. R. Ejaz et al.",
-      venue: "TBD (MSc dissertation companion)",
-      type: "Journal",
-      status: "In Preparation",
-      year: "2026",
-      areas: ["Agentic AI", "LLMs", "Benchmarking"],
-      description:
-        "Open benchmark dataset and reproducible evaluation framework measuring factual accuracy, hierarchical reasoning quality, and hallucination rates of LLM-generated equity research against analyst-produced ground truth.",
     },
   ],
 };
@@ -713,7 +827,6 @@ const collaborations = {
   description:
     "My research network spans six countries and multiple institutions. I collaborate with researchers ranked in the top 2% globally by citation impact, and I co-supervise undergraduate research at IBA Karachi alongside Dr. Faisal Iradat, targeting Q1 journals and A* conferences.",
 
-  // LinkedIn CTA, recommendations from these collaborators are on the real LinkedIn profile
   linkedInCTA: {
     heading: "Recommendations on LinkedIn",
     body:
@@ -723,89 +836,26 @@ const collaborations = {
   },
 
   stats: [
+    { label: "Publications", value: "20+", caption: "1 Q1 published, 5 accepted, ~14 under review or in preparation" },
     { label: "Projects Co-Supervised", value: "4", caption: "Undergraduate research projects at IBA Karachi" },
     { label: "Countries", value: "6", caption: "UK · US · UAE · Pakistan · Saudi Arabia · Oman" },
-    { label: "Publications in Pipeline", value: "19+", caption: "Under review & in preparation" },
     { label: "Top-Tier Targeting", value: "Q1 / A*", caption: "IEEE, ACM, and top-tier venues" },
   ],
 
   professors: [
-    {
-      name: "Dr. S. M. Faisal Iradat",
-      affiliation: "Institute of Business Administration (IBA), Karachi",
-      role: "Assistant Professor · Head, TRL",
-      description:
-        "Head of the Telecommunications Research Lab (TRL) at SMCS, IBA Karachi. 20+ years in cybersecurity, IoT, AI, and wireless communications, with 40+ publications and global collaborative leadership. My primary mentor and co-author on the majority of my submitted work, spanning the nested learning and federated learning programmes.",
-      scholarUrl: "",
-      profileUrl: "https://trl.iba.edu.pk/",
-      color: "#0E6BA8",
-    },
-    {
-      name: "Dr. Haider Abbas",
-      affiliation: "Director General, National CERT Pakistan",
-      role: "Tamgha-i-Imtiaz · SMIEEE · IET Fellow",
-      description:
-        "Director General of Pakistan's National Cyber Emergency Response Team and former Tenured Professor of Cybersecurity at MCS-NUST. Awarded the Tamgha-i-Imtiaz for contributions to information technology. Led the national AI-SIEM initiative I contributed to. 8,000+ citations.",
-      scholarUrl: "https://scholar.google.com/citations?user=qABFlzgAAAAJ&hl=en",
-      profileUrl: "https://mcs.nust.edu.pk/faculty/haider-abbas-1/",
-      color: "#005F73",
-    },
-    {
-      name: "Dr. Mian Muhammad Waseem Iqbal",
-      affiliation: "Sultan Qaboos University, Muscat · NUST (on leave)",
-      role: "Assistant Professor · Top 2% Scientist",
-      description:
-        "Assistant Professor at Sultan Qaboos University, previously Associate Professor at NUST. Top 2% Scientist globally. 75+ publications in information security, digital forensics, IoT security, and cryptography. Co-author on nested federated learning and wearable ECG classification work.",
-      scholarUrl: "https://scholar.google.com/citations?user=8pAhBrYAAAAJ&hl=en",
-      profileUrl: "https://mcs.nust.edu.pk/faculty/mian-muhammad-waseem-iqbal/",
-      color: "#6A040F",
-    },
-    {
-      name: "Dr. Yawar Abbas Bangash",
-      affiliation: "Sunway University, Malaysia · NUST (tenured, on leave)",
-      role: "Senior Lecturer · Tenured Associate Professor",
-      description:
-        "Senior Lecturer at Sunway University Malaysia and tenured Associate Professor at NUST. PhD from Huazhong University of Science and Technology. Research spans SDN security, IoT, wireless sensor networks, and machine learning. Co-author on SafeNest and Bayesian nested optimisation for 6G Open-RAN.",
-      scholarUrl: "https://scholar.google.com/citations?user=ugQYOtEAAAAJ&hl=en",
-      profileUrl: "https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/dr-yawar-abbas-bangash",
-      color: "#22223B",
-    },
-    {
-      name: "Dr. Majdi Mansouri",
-      affiliation: "Sultan Qaboos University · Texas A&M at Qatar",
-      role: "Associate Professor · IEEE Senior Member",
-      description:
-        "Associate Professor at SQU and formerly Associate Research Scientist at Texas A&M Qatar. 200+ publications in statistical signal processing, fault detection, and applied ML. Co-author of the Elsevier book *Data-Driven and Model-Based Methods for Fault Detection and Diagnosis*. Co-author on federated synchronisation and explanation stability under drift.",
-      scholarUrl: "https://scholar.google.com/citations?user=nfeZfuEAAAAJ&hl=en",
-      profileUrl: "https://www.squ.edu.om/Portals/18/CVs/ECE_Dr.Majdi_Mansouri_CV.PDF",
-      color: "#8D0801",
-    },
-    {
-      name: "Dr. Nour Aburaed",
-      affiliation: "University of Dubai, UAE",
-      role: "Assistant Professor",
-      description:
-        "Assistant Professor at the College of Engineering and IT, University of Dubai. PhD from the University of Strathclyde on single-image super-resolution for hyperspectral remote sensing. Previously at the Mohammed Bin Rashid Space Centre. Co-author on physics-informed RL for multi-timescale EV charging.",
-      scholarUrl: "https://scholar.google.com/citations?user=E9dGDEEAAAAJ&hl=en",
-      profileUrl: "https://ud.ac.ae/ud_members/nour-aburaed/",
-      color: "#003049",
-    },
-    {
-      name: "Dr. Awais Ahmad",
-      affiliation: "Imam Mohammad Ibn Saud Islamic University (IMSIU), Riyadh",
-      role: "Assistant Professor",
-      description:
-        "Assistant Professor in Information Systems, IMSIU. PhD from Kyungpook National University, South Korea. Previously senior researcher at Università degli Studi di Milano and at Yeungnam University. Research in artificial intelligence, cybersecurity, medical image processing, and IoT. Co-author on hepatic vessel segmentation.",
-      scholarUrl: "https://scholar.google.com/citations?user=g93AK6EAAAAJ&hl=en",
-      profileUrl: "https://awaisahmad.net/",
-      color: "#1F4E79",
-    },
+    { name: "Dr. S. M. Faisal Iradat", affiliation: "Institute of Business Administration (IBA), Karachi", role: "Assistant Professor · Head, TRL", description: "Head of the Telecommunications Research Lab (TRL) at SMCS, IBA Karachi. 20+ years in cybersecurity, IoT, AI, and wireless communications, with 40+ publications and global collaborative leadership. My primary mentor and co-author on the majority of my submitted work.", scholarUrl: "", profileUrl: "https://trl.iba.edu.pk/", color: "#0E6BA8" },
+    { name: "Dr. Haider Abbas", affiliation: "Director General, National CERT Pakistan", role: "Tamgha-i-Imtiaz · SMIEEE · IET Fellow", description: "Director General of Pakistan's National Cyber Emergency Response Team and former Tenured Professor of Cybersecurity at MCS-NUST. Awarded the Tamgha-i-Imtiaz for contributions to information technology. Led the national AI-SIEM initiative I contributed to. 8,000+ citations.", scholarUrl: "https://scholar.google.com/citations?user=qABFlzgAAAAJ&hl=en", profileUrl: "https://mcs.nust.edu.pk/faculty/haider-abbas-1/", color: "#005F73" },
+    { name: "Dr. Mian Muhammad Waseem Iqbal", affiliation: "Sultan Qaboos University, Muscat · NUST (on leave)", role: "Assistant Professor · Top 2% Scientist", description: "Assistant Professor at Sultan Qaboos University, previously Associate Professor at NUST. Top 2% Scientist globally. 75+ publications in information security, digital forensics, IoT security, and cryptography. Co-author on nested federated learning and wearable ECG classification work.", scholarUrl: "https://scholar.google.com/citations?user=8pAhBrYAAAAJ&hl=en", profileUrl: "https://mcs.nust.edu.pk/faculty/mian-muhammad-waseem-iqbal/", color: "#6A040F" },
+    { name: "Dr. Yawar Abbas Bangash", affiliation: "Sunway University, Malaysia · NUST (tenured, on leave)", role: "Senior Lecturer · Tenured Associate Professor", description: "Senior Lecturer at Sunway University Malaysia and tenured Associate Professor at NUST. PhD from Huazhong University of Science and Technology. Research spans SDN security, IoT, wireless sensor networks, and machine learning. Co-author on SafeNest and Bayesian nested optimisation for 6G Open-RAN.", scholarUrl: "https://scholar.google.com/citations?user=ugQYOtEAAAAJ&hl=en", profileUrl: "https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/dr-yawar-abbas-bangash", color: "#22223B" },
+    { name: "Dr. Majdi Mansouri", affiliation: "Sultan Qaboos University · Texas A&M at Qatar", role: "Associate Professor · IEEE Senior Member", description: "Associate Professor at SQU and formerly Associate Research Scientist at Texas A&M Qatar. 200+ publications in statistical signal processing, fault detection, and applied ML. Co-author of the Elsevier book *Data-Driven and Model-Based Methods for Fault Detection and Diagnosis*.", scholarUrl: "https://scholar.google.com/citations?user=nfeZfuEAAAAJ&hl=en", profileUrl: "https://www.squ.edu.om/Portals/18/CVs/ECE_Dr.Majdi_Mansouri_CV.PDF", color: "#8D0801" },
+    { name: "Dr. Nour Aburaed", affiliation: "University of Dubai, UAE", role: "Assistant Professor", description: "Assistant Professor at the College of Engineering and IT, University of Dubai. PhD from the University of Strathclyde on single-image super-resolution for hyperspectral remote sensing. Previously at the Mohammed Bin Rashid Space Centre. Co-author on physics-informed RL for multi-timescale EV charging.", scholarUrl: "https://scholar.google.com/citations?user=E9dGDEEAAAAJ&hl=en", profileUrl: "https://ud.ac.ae/ud_members/nour-aburaed/", color: "#003049" },
+    { name: "Dr. Awais Ahmad", affiliation: "Imam Mohammad Ibn Saud Islamic University (IMSIU), Riyadh", role: "Assistant Professor", description: "Assistant Professor in Information Systems, IMSIU. PhD from Kyungpook National University, South Korea. Previously senior researcher at Università degli Studi di Milano and at Yeungnam University. Research in artificial intelligence, cybersecurity, medical image processing, and IoT. Co-author on hepatic vessel segmentation.", scholarUrl: "https://scholar.google.com/citations?user=g93AK6EAAAAJ&hl=en", profileUrl: "https://awaisahmad.net/", color: "#1F4E79" },
   ],
 
   supervisedProjects: [
     { title: "FedSRIMU", subtitle: "Spectral-Regularised Federated Unlearning for IoT IDS", description: "Spectral-regularised federated unlearning for IoT-based intrusion detection, enabling selective client knowledge removal without full retraining." },
     { title: "Panopticon", subtitle: "Privacy Preservation in Distributed Information Systems", description: "A proposal for privacy preservation in distributed information systems under realistic threat models." },
-    { title: "HADES", subtitle: "Hierarchical Autonomous Digital Evidence System", description: "Skill-driven multi-agent orchestration for digital forensics (companion UG work to the HADES paper under review at WI 2026)." },
+    { title: "HADES", subtitle: "Hierarchical Autonomous Digital Evidence System", description: "Skill-driven multi-agent orchestration for digital forensics (companion UG work to the accepted HADES poster at WI 2026)." },
     { title: "TEMPEST", subtitle: "Temporal Execution Modeling for Pre-Encryption Ransomware", description: "Pre-encryption ransomware detection with timestep-level explainability, targeting stability under temporal drift." },
   ],
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 import styles from "./NeuraX.module.css";
 import { neuraX } from "portfolio";
@@ -34,6 +35,14 @@ export default function NeuraX({ theme }) {
             <p className={styles["role"]} style={{ color: theme.text }}>
               {neuraX.role}
             </p>
+            <Link href="/neura-x">
+              <a
+                className={styles["learn-more"]}
+                style={{ color: theme.imageHighlight }}
+              >
+                {neuraX.ctaLabel} →
+              </a>
+            </Link>
           </div>
           <div className={styles["pillars"]}>
             {neuraX.pillars.map((pillar, i) => (

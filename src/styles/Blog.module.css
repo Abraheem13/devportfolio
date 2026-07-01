@@ -299,3 +299,42 @@
   .article-tagline { font-size: 18px; }
   .article-paragraph { font-size: 17px; }
 }
+
+/* Instagram community CTA (sidebar) */
+.community-card {
+  margin-top: 20px;
+  padding: 24px 26px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.community-heading {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 10px 0;
+}
+
+.community-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.community-link {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.16s ease;
+}
+
+.community-link:hover { transform: translateY(-1px); opacity: 1 !important; }

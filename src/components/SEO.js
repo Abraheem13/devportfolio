@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const SEO = ({
-  desc = "Raja Abraheem Rashid, AI/ML researcher working on nested learning, federated learning, trustworthy AI, and agentic LLM systems. Currently AI/ML Engineer at Curium and AI Researcher & Co-Investigator at TRL, IBA.",
+  desc = "Raja Abraheem Rashid, AI/ML researcher working on nested learning, federated learning, trustworthy AI, and agentic LLM systems. AI/ML Software Engineer at EMS, AI Researcher & Co-Investigator at TRL, IBA, and founder of Neura-X.",
   author = "Raja Abraheem Rashid",
   meta,
   title = "Raja Abraheem Rashid | AI/ML Researcher",
